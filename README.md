@@ -522,16 +522,6 @@ Above this breakpoint, the value will be equal to the value you passed to RFS; b
 
 *Default value: `1200px`*
 
-### Breakpoint unit <sub><sup>(`px`, `em` or `rem`)</sup></sub>
-
-- SCSS, Sass & Stylus: `$rfs-breakpoint-unit`
-- Less: `@rfs-breakpoint-unit`
-- PostCSS: `breakpointUnit`
-
-The width of the max width in the media query will be rendered in this unit.
-
-*Default value: `px`*
-
 ### Factor <sub><sup>(number)</sup></sub>
 
 - SCSS, Sass & Stylus: `$rfs-factor`
@@ -559,33 +549,6 @@ The value of `1rem` in `px`. The value of `1rem` is typically `16px` but if the 
 - PostCSS: `twoDimensional`
 
 Enabling the two dimensional media queries will determine the value based on the smallest side of the screen with `vmin`. This prevents values from changing if the device toggles between portrait and landscape mode.
-
-*Default value: `false`*
-
-### Class <sub><sup>(boolean)</sup></sub>
-
-- SCSS, Sass & Stylus: `$rfs-class`
-- Less: `@rfs-class`
-- PostCSS: `class`
-
-RFS can be enabled or disabled with a class. There are 3 options:
-
-- `false`
-  No extra classes are generated.
-- `disable`
-  When the the disable classes are generated you can add the `.disable-rfs` class to an element to disable responsive value rescaling for the element and its child elements.
-- `enable`
-  RFS is disabled by default in this case. The `.enable-rfs` class can be added to an element to enable responsive value rescaling for the element and its child elements.
-
-*Default value: `false`*
-
-### Safari iframe resize bug fix <sub><sup>(boolean)</sup></sub>
-
-- SCSS, Sass & Stylus: `$rfs-safari-iframe-resize-bug-fix`
-- Less: `@rfs-safari-iframe-resize-bug-fix`
-- PostCSS: `safariIframeResizeBugFix`
-
-Safari doesn't resize its values in an iframe if the iframe is resized. To fix this `min-width: 0vw` can be added and that's what happens if this option is enabled. See [#14](https://github.com/twbs/rfs/issues/14).
 
 *Default value: `false`*
 
